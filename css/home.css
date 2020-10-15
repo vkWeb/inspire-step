@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*-------- Hero ------*/
+img.hero-img {
+  max-width: 40%;
+  margin-top: 3rem;
+  float: right;
+}
+
+.card {
+  display: inline-block;
+  width: 25%;
+  border: 1px solid black;
+}

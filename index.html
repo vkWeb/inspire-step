@@ -6,9 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="css/main.css" />
     <title>InspireStep - Coming soon</title>
 
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,10 +19,17 @@
   <body>
     <nav>
       <ul>
-        <li class="logo">logo</li>
+        <li>
+          <img
+            src="assets/logo-full.png"
+            class="logo"
+            alt="InspireStep.com"
+            srcset=""
+          />
+        </li>
         <ul class="main-links">
           <li><a href="#">Grab an opportunity</a></li>
-          <li><a href="#">Post a Job (Employer)</a></li>
+          <li><a href="#">Post a Job (For Employers)</a></li>
         </ul>
         <li class="quick-contact">
           <a href="tel:+91-998-167-7217">
@@ -32,41 +40,40 @@
     </nav>
 
     <main>
+      <img
+        class="hero-img"
+        src="assets/hero-illustration.png"
+        alt="People climbing the ladder of success"
+        srcset=""
+      />
       <h1>
-        Businesses need People like you. So now it's your time to take an
-        inspiring step.
+        Businesses need People.<br />
+        Now it's your time to take an inspiring step.
       </h1>
 
-      <h2>Only 100% verified work opportunities</h2>
-      <section>
+      <section class="card">
+        <h2>100% verified work opportunities</h2>
         <p>
           Stop competing with monkeys. Once you apply & we get to know your
           interests, then we connect you directly to 100% verified local
           businesses.
         </p>
-        <a href="#">Apply for opportunities</a>
+        <a href="#" class="btn btn-primary">Apply now</a>
       </section>
 
-      <h2>For businesses</h2>
-      <section>
+      <section class="card">
+        <h2>For businesses</h2>
         <p>
           Hiring platforms (yes Indeed) burdens you with a flood of resumes.
-          Countless hours get wasted in filtering resumes. Here, you get to
+          Countless hours get wasted in filtering candidates. Here, you get to
           interview only the most capable among the crowd.
         </p>
-        <a href="#">Submit opportunity (only for businesses)</a>
+        <a href="#" class="btn btn-primary">Submit an opportunity</a>
       </section>
-
-      <img
-        class="hero-img"
-        src="assets/hero.png"
-        alt="people climbing the ladder of success"
-        srcset=""
-      />
     </main>
 
     <footer>
-      <a href="/about">about our team</a>
+      <p><a href="/about">about our team</a></p>
     </footer>
   </body>
 </html>

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/*-------- Root CSS Variables --------*/
+:root {
+  --primary: #167af3;
+  --primary-pair: #ffc331;
+  --text-color: #333333;
+}
+
 /*-------- General --------*/
 html {
   font-family: "Roboto", sans-serif, "system-ui";
@@ -8,10 +15,9 @@ html {
 }
 
 body {
-  color: #333333;
+  color: var(--text-color);
   margin: 0;
   padding: 0;
-  height: 1500px;
 }
 
 *,
@@ -35,7 +41,8 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: 300;
+  display: inline;
+  font-weight: 400;
 }
 
 nav ul li a {
@@ -43,7 +50,28 @@ nav ul li a {
   color: inherit;
 }
 
-/*-------- Hero ------*/
-.hero-img {
-  max-width: 40%;
+.logo {
+  float: left;
+  width: 16%;
+}
+
+/*-------- Buttons --------*/
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0.4rem;
+}
+
+a.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.15);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a.btn-primary:hover {
+  box-shadow: 0 3px 12px 0 rgba(5, 5, 5, 0.4);
 }
