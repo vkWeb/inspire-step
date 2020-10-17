@@ -4,6 +4,8 @@
 :root {
   --primary: #167af3;
   --primary-pair: #ffc331;
+  --body-bg: #ffffff;
+  --primary-bg: #eef5fe;
   --text-color: #333333;
 }
 
@@ -28,21 +30,27 @@ body {
 
 /*-------- Navigation --------*/
 nav {
+  display: flex;
   position: sticky;
+  align-items: center;
   top: 0px;
-  background: #ffffff;
+  background: var(--body-bg);
   box-shadow: 0px 6px 14px -6px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
+  padding: 0;
   list-style: none;
-  text-align: right;
+  flex: 1;
+}
+
+img.logo {
+  max-width: 160px;
 }
 
 nav ul li {
-  display: inline;
-  font-weight: 400;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -50,9 +58,24 @@ nav ul li a {
   color: inherit;
 }
 
-.logo {
-  float: left;
-  width: 16%;
+ul.main-links {
+  text-align: center;
+  flex: 2;
+}
+
+ul.main-links li {
+  margin-right: 2.6rem;
+}
+
+ul.quick-contact li {
+  float: right;
+}
+
+ul.logo-wrapper {
+  margin-left: 3.5rem;
+}
+ul.quick-contact {
+  margin-right: 3.5rem;
 }
 
 /*-------- Buttons --------*/
