@@ -1,17 +1,28 @@
 @charset "UTF-8";
 
 /*-------- Hero ------*/
-
-main h1.hero-heading {
+main div.hero-heading {
+  margin: 4rem auto;
   text-align: center;
 }
 
-img.hero-img {
-  max-width: 340px;
-  background: var(--primary-bg);
-  border-radius: 2rem;
+main img.hero-img {
+  float: right;
+  max-width: 400px;
 }
 
-section.card {
+main section.cta-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section.cta-cards-wrapper article {
+  width: 350px;
+  padding: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+
+main section.cta-cards-wrapper article:nth-of-type(2) {
+  margin-left: 2rem;
 }

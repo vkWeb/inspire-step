@@ -5,7 +5,7 @@
   --primary: #167af3;
   --primary-pair: #ffc331;
   --body-bg: #ffffff;
-  --primary-bg: #eef5fe;
+  --primary-bg: #f8fbff;
   --text-color: #333333;
 }
 
@@ -20,6 +20,9 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 *,
@@ -40,6 +43,7 @@ nav {
 }
 
 nav ul {
+  margin: 5px 0;
   padding: 0;
   list-style: none;
   flex: 1;
@@ -78,6 +82,12 @@ ul.quick-contact {
   margin-right: 3.5rem;
 }
 
+/* Make the Nav right and left margins consistent with the main, footer UI */
+main,
+footer {
+  margin: auto 3.5rem;
+}
+
 /*-------- Buttons --------*/
 a.btn {
   display: inline-block;
@@ -97,4 +107,14 @@ a.btn-primary {
 
 a.btn-primary:hover {
   box-shadow: 0 3px 12px 0 rgba(5, 5, 5, 0.4);
+}
+
+/*-------- Footer --------*/
+footer p {
+  font-size: 0.9rem;
+  color: #7d7c83;
+}
+
+footer p a {
+  color: inherit;
 }
