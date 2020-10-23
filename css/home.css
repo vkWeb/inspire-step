@@ -2,28 +2,24 @@
 
 /*-------- Hero ------*/
 main div.hero-heading {
-  margin: 3rem auto 0 auto;
+  margin: 7rem auto 4rem auto;
   text-align: center;
-}
-
-main div.hero-heading h1 {
-  margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 main img.hero-img {
-  max-width: 240px;
-  background: var(--primary-bg);
-  border-radius: 0.6rem;
+  max-width: 330px;
 }
 
 main section.cta-cards-wrapper {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 4vw;
 }
 
 main section.cta-cards-wrapper article {
-  max-width: 560px;
+  max-width: 480px;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
@@ -32,3 +28,5 @@ main section.cta-cards-wrapper article {
 main section.cta-cards-wrapper article h2 {
   margin: 0;
 }
+
+/*-------- Media Queries For Tablet and Mobile --------*/
