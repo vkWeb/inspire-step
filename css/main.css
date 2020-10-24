@@ -101,6 +101,10 @@ footer p a {
 
 /*-------- Media Queries For Tablet and Mobile --------*/
 @media (max-width: 760px) {
+  html {
+    font-size: 80%;
+  }
+
   header.nav-header nav ul {
     flex-direction: column;
   }
