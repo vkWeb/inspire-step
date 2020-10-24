@@ -1,1 +1,5 @@
 /*-------- About Page CSS --------*/
+section.team-wrapper article.member-card img.member-img {
+  max-width: 200px;
+  float: left;
+}
