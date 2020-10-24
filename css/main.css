@@ -116,5 +116,6 @@ footer p a {
 
   header.nav-header nav ul li:nth-of-type(2) span {
     display: inline-block;
+    line-height: 1.6;
   }
 }

@@ -1,5 +1,20 @@
 /*-------- About Page CSS --------*/
-section.team-wrapper article.member-card img.member-img {
-  max-width: 200px;
+section.team-wrapper > article.member-card img.member-img {
+  max-width: 100px;
+  border-radius: 0.2rem;
   float: left;
+}
+
+section.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+}
+
+section.team-wrapper > article.member-card {
+  padding: 1rem;
+  max-width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
 }
