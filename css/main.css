@@ -16,6 +16,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--text-color);
   padding: 0;
@@ -28,15 +34,22 @@ body {
 nav,
 main,
 footer {
-  width: 90vw;
+  width: 80vw;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+li {
+  margin-top: 1rem;
+}
+
+.tele-contact {
+  display: inline-block;
+}
+
+img.logo {
+  width: 160px;
+  height: 44px;
 }
 
 /*-------- Navigation --------*/
@@ -52,18 +65,17 @@ header.nav-header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4px 0;
+  margin: 2px 0;
   padding: 0;
   list-style: none;
 }
 
-header.nav-header nav ul li a {
-  color: inherit;
+header.nav-header nav ul li {
+  margin: 0;
 }
 
-img.logo {
-  width: 160px;
-  height: 44px;
+header.nav-header nav ul li a {
+  color: inherit;
 }
 
 /*-------- Buttons --------*/
@@ -93,6 +105,7 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #7d7c83;
+  margin: 1rem auto;
 }
 
 footer p a {
@@ -100,9 +113,15 @@ footer p a {
 }
 
 /*-------- Media Queries For Tablet and Mobile --------*/
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   html {
     font-size: 90%;
+  }
+
+  nav,
+  main,
+  footer {
+    width: 90vw;
   }
 
   header.nav-header nav ul {
@@ -119,7 +138,6 @@ footer p a {
   }
 
   header.nav-header nav ul li.contact span {
-    display: inline-block;
     line-height: 1.6;
   }
 }
