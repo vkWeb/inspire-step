@@ -32,7 +32,7 @@ main section.cta-cards-wrapper article h2 {
 /*-------- Media Queries For Tablet and Mobile --------*/
 @media (max-width: 760px) {
   main div.hero-heading {
-    margin: 4rem auto 2rem auto;
+    margin: 5rem auto 3rem auto;
     line-height: 1.2;
   }
 }
