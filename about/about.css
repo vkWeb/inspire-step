@@ -10,7 +10,7 @@ section.team-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 section.team-wrapper > article.member-card {
@@ -31,4 +31,12 @@ section.team-wrapper > article.member-card {
 
 .member-head > h2 {
   margin: 6px 0;
+}
+
+main .special-thanks {
+  margin: 3rem auto 0 auto;
+  padding: 1rem;
+  max-width: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
 }
